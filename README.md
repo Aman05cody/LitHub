@@ -2,7 +2,6 @@
 
 <div align="center">
 
-![LitHub Logo](Frontend/public/favicon.svg)
 
 A modern, elegant full-stack web application for discovering, learning, and managing books and courses. Built with cutting-edge technology for an immersive reading and learning experience.
 
