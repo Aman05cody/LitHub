@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Slick slider styling for light and dark theme */
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.dark .slick-prev:before,
+.dark .slick-next:before {
+  color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark .slick-prev,
+.dark .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark .slick-prev:hover,
+.dark .slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
