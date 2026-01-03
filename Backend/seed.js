@@ -142,8 +142,8 @@ async function seedDatabase() {
     console.log("Connected to MongoDB");
 
     // Clear existing books (optional - comment out if you want to keep existing data)
-    // await Book.deleteMany({});
-    // console.log("Cleared existing books");
+    await Book.deleteMany({});
+    console.log("Cleared existing books");
 
     // Insert new books
     const result = await Book.insertMany(booksData);

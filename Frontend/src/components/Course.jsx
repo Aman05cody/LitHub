@@ -13,8 +13,8 @@ function Course() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const booksRes = await axios.get("https://lithub-3d2k.onrender.com/book");
-        const coursesRes = await axios.get("https://lithub-3d2k.onrender.com/course");
+        const booksRes = await axios.get("http://localhost:4002/book");
+        const coursesRes = await axios.get("http://localhost:4002/course");
         setBooks(booksRes.data);
         setCourses(coursesRes.data);
       } catch (error) {

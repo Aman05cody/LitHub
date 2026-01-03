@@ -9,7 +9,7 @@ function FreeBooks() {
   useEffect(() => {
     const getBooks = async () => {
       try {
-        const res = await axios.get("https://lithub-3d2k.onrender.com/book");
+        const res = await axios.get("http://localhost:4002/book");
         const free = res.data.filter((item) => item.isFree);
         setFreeBooks(free);
       } catch (error) {
