@@ -8,7 +8,7 @@ function Freebook() {
   useEffect(() => {
     const getCourses = async () => {
       try {
-        const res = await axios.get("http://localhost:4002/course");
+        const res = await axios.get("https://lithub-3d2k.onrender.com/course");
         setCourses(res.data);
       } catch (error) {
         console.log(error);
